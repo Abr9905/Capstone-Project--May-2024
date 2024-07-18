@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <style>
+
+    </style>
 </head>
 <body>
- <   
+ <h1>About</h1><br> 
+ <p>Hi, My name is Alexis but you can call me Briana. I was born and raised in North Carolina. I now reside in Rolesville,NC with my babygirl  Genesis. My current age is:</p>
+ <p id="age"></p>
+ <script>
+    let x = myFunction(5, 5);
+    document.getElementById("age").innerHTML = x;
+
+    function myFunction(a, b) {
+      return a * b;
+    }
+    </script>  
+    <p>The reason and purpose of me deciding to do a personal vision board website was to:</p>
+    <p id="vision"></p>
+
+<script>
+const dreams = ["Have a visual of what my reality will be in the future.", "Create goals to acclompish.", "Motivate myself to elevate everyday.", "Give my daughter a promising future.", "Gradually practice positivity and learn new things.", "Have a healthy work life balance."];
+let text="";
+for (let i = 0; i < dreams.length; i++) {
+  text += dreams[i] + "<br>";
+}
+document.getElementById("vision").innerHTML = text;
+</script>
+<p id="website"></p>
+<script>
+    const insight = new Date().getHours();
+    let greeting;
+    if (insight > 40) {
+      greeting = "Thank you for taking time to visit!";
+    } else if (insight < 500) {
+      greeting = "Theres more to explore!";
+    } else {
+      greeting = "Thanks for visiting my website!";
+    }
+    document.getElementById("website").innerHTML = greeting;
+    </script>
 </body>
 </html>
