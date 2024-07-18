@@ -31,18 +31,21 @@ for (let i = 0; i < dreams.length; i++) {
 }
 document.getElementById("vision").innerHTML = text;
 </script>
-<p id="website"></p>
+<button onclick="myFunction()">Click Here</button>
+<p id="demo"></p>
 <script>
-    const insight = new Date().getHours();
-    let greeting;
-    if (insight > 40) {
-      greeting = "Thank you for taking time to visit!";
-    } else if (insight < 500) {
-      greeting = "Theres more to explore!";
-    } else {
-      greeting = "Thanks for visiting my website!";
+    function myFunction() {
+      let text;
+      let person = prompt("What is your Name?")
+      let email = prompt("Enter your email to subscribe:", "");  
+      if (person == person || email == "") {
+        text = "Thanks for stopping by" + person + "Have a nice day!";
+      } else {
+        text = "Hello "  + person +  "Thank you for subscribing! Be on the lookout for more updates!"  + email + "";
+      }
+      document.getElementById("demo").innerHTML = text;
     }
-    document.getElementById("website").innerHTML = greeting;
-    </script>
+    </script>  
+
 </body>
 </html>
