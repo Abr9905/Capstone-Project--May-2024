@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <style>
 
-    </style>
-</head>
-<body>
- <h1>About</h1><br> 
- <p>Hi, My name is Alexis but you can call me Briana. I was born and raised in North Carolina. I now reside in Rolesville,NC with my babygirl  Genesis. My current age is:</p>
- <p id="age"></p>
- <script>
-    let x = myFunction(5, 5);
-    document.getElementById("age").innerHTML = x;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <style>
 
-    function myFunction(a, b) {
-      return a * b;
-    }
-    </script>  
-    <p>The reason and purpose of me deciding to do a personal vision board website was to:</p>
-    <p id="vision"></p>
+        </style>
+    </head>
 
-<script>
-const dreams = ["Have a visual of what my reality will be in the future.", "Create goals to acclompish.", "Motivate myself to elevate everyday.", "Give my daughter a promising future.", "Gradually practice positivity and learn new things.", "Have a healthy work life balance."];
-let text="";
-for (let i = 0; i < dreams.length; i++) {
-  text += dreams[i] + "<br>";
-}
-document.getElementById("vision").innerHTML = text;
-</script>
-<button onclick="myFunction()">Click Here</button>
-<p id="demo"></p>
-<script>
-    function myFunction() {
-      let text;
-      let person = prompt("What is your Name?")
-      let email = prompt("Enter your email to subscribe:", "");  
-      if (person == person || email == "") {
-        text = "Thanks for stopping by" + person + "Have a nice day!";
-      } else {
-        text = "Hello "  + person +  "Thank you for subscribing! Be on the lookout for more updates!"  + email + "";
-      }
-      document.getElementById("demo").innerHTML = text;
-    }
-    </script>  
+    <body>
+        <h1>About</h1><br>
+        <p>Hi, My name is Alexis but you can call me Briana. I was born and raised in North Carolina. I now reside in
+            Rolesville,NC with my babygirl Genesis. My current age is:</p>
+        <p id="age"></p>
+        <script>
+            let x = myFunction(5, 5);
+            document.getElementById("age").innerHTML = x;
 
-</body>
+            function myFunction(a, b) {
+                return a * b;
+            }
+        </script>
+        <p>The reason and purpose of me deciding to do a personal vision board website was to:</p>
+        <p id="vision"></p>
+
+        <script>
+            const dreams = ["Have a visual of what my reality will be in the future.", "Create goals to acclompish.", "Motivate myself to elevate everyday.", "Give my daughter a promising future.", "Gradually practice positivity and learn new things.", "Have a healthy work life balance."];
+            let text = "";
+            for (let i = 0; i < dreams.length; i++) {
+                text += dreams[i] + "<br>";
+            }
+            document.getElementById("vision").innerHTML = text;
+        </script>
+        <button onclick="myFunction()">Click Here</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                let text;
+                let person = prompt("What is your Name?")
+                let email = prompt("Enter your email to subscribe:", "");
+                if (person == person || email == "") {
+                    text = "Thanks for stopping by" + person + "Have a nice day!";
+                } else {
+                    text = "Hello " + person + "Thank you for subscribing! Be on the lookout for more updates!" + email + "";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+
+    </body>
+
 </html>
