@@ -12,6 +12,15 @@
 
     <body>
         <h1>About</h1><br>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          
         <p>Hi, My name is Alexis but you can call me Briana. I was born and raised in North Carolina. I now reside in
             Rolesville,NC with my babygirl Genesis. My current age is:</p>
         <p id="age"></p>
@@ -41,10 +50,10 @@
                 let text;
                 let person = prompt("What is your Name?")
                 let email = prompt("Enter your email to subscribe:", "");
-                if (person == person || email == "") {
-                    text = "Thanks for stopping by" + person + "Have a nice day!";
+                if (email === "") {
+                    text = "Thanks for stopping by " + person + " Have a nice day!";
                 } else {
-                    text = "Hello " + person + "Thank you for subscribing! Be on the lookout for more updates!" + email + "";
+                    text = "Hello " + person + "Thank you for subscribing! Be on the lookout for more updates! " + email + "";
                 }
                 document.getElementById("demo").innerHTML = text;
             }
